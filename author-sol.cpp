@@ -27,7 +27,7 @@ int main() {
 			int last = 0;
 			for (pair<int, int> p : x.second) {
 				// if the arrival value of the current customer is greater than or equal to the most recent
-				// departure value of the previous customer, then we increment the counter
+				// departure value of the previous customer, then we increment the counter and update the recent departure value
 				if (p.second >= last) {
 					cnt++;
 					last = p.first;
